@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../../../inc/img/favicon.png">
+    <link rel="stylesheet" href="../../../inc/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../inc/stripchart.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="../../../inc/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../inc/jquery.widget.js"></script>
+    <script type="text/javascript" src="../../../inc/jquery.stripchart.js"></script>
+    <script type="text/javascript" src="../../../inc/stripchart.js"></script>
+    <script type="text/javascript" src="../../../inc/popper.min.js"></script>
+    <script type="text/javascript" src="../../../inc/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Tone.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <title>DDoS Protect Sonify</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark mb-3" style="background-color: #336;">
+      <a class="navbar-brand" href="#">
+        <img src="../../../inc/img/inmon.svg" height="30" class="d-inline-block align-top">
+        DDoS Protect Sonify
+      </a>
+    </nav>
+    <main class="container-fluid" role="main">
+      <section id="charts">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">ip_flood</h5>
+              <div class="card-body">
+                <div id="ip-flood" class="trend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">ip_fragmentation</h5>
+              <div class="card-body">
+                <div id="ip-fragmentation" class="trend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">icmp_flood</h5>
+              <div class="card-body">
+                <div id="icmp-flood" class="trend"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">udp_flood</h5>
+              <div class="card-body">
+                <div id="udp-flood" class="trend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">udp_amplification</h5>
+              <div class="card-body">
+                <div id="udp-amplification" class="trend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">tcp_flood</h5>
+              <div class="card-body">
+                <div id="tcp-flood" class="trend"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">tcp_amplification</h5>
+              <div class="card-body">
+                <div id="tcp-amplification" class="trend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">Controls</h5>
+              <div class="card-body">
+                <div id="attacks" class="trend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <h5 class="card-header">BGP</h5>
+              <div class="card-body">
+                <div id="connections" class="trend"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="sonify">
+            <label class="custom-control-label" for="sonify">Convert charts to sound</label>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer page-footer border-top mt-3">
+       <div class="footer-copyright text-center py-2">
+         <small class="text-muted">Copyright &copy; 2022 InMon Corp. ALL RIGHTS RESERVED</small>
+       </div>
+    </footer>
+  </body>
+</html>
